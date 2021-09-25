@@ -29,7 +29,7 @@ registrar.addEventListener("click", async () => {
       animal = new Lobo(
         nombre.value,
         edad.value,
-        datos.animales[1],
+        datos.animales[1].imagen,
         comentarios.value,
         datos.animales[1].sonido
       );
@@ -37,7 +37,7 @@ registrar.addEventListener("click", async () => {
       animal = new Oso(
         nombre.value,
         edad.value,
-        datos.animales[2],
+        datos.animales[2].imagen,
         comentarios.value,
         datos.animales[2].sonido
       );
@@ -45,7 +45,7 @@ registrar.addEventListener("click", async () => {
       animal = new Serpiente(
         nombre.value,
         edad.value,
-        datos.animales[3],
+        datos.animales[3].imagen,
         comentarios.value,
         datos.animales[3].sonido
       );
@@ -53,7 +53,7 @@ registrar.addEventListener("click", async () => {
       animal = new Aguila(
         nombre.value,
         edad.value,
-        datos.animales[4],
+        datos.animales[4].imagen,
         comentarios.value,
         datos.animales[4].sonido
       );
