@@ -1,4 +1,4 @@
-let dato_animal = (()=>{
+export let dato_animal = (()=>{
     const url = "http://localhost:5500/animales.json"
     const request = async (url) => {
         const result = await fetch(url);

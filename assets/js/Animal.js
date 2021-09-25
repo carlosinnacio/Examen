@@ -36,7 +36,7 @@ class Leon extends Animal {
       super(nombre, edad, img, comentarios, sonido)  
     } 
     Rugir(){
-
+        return this.sonido
     }
 }
 class Lobo extends Animal {
@@ -44,7 +44,7 @@ class Lobo extends Animal {
       super(nombre, edad, img, comentarios, sonido)  
     }
     Aullar(){
-
+        return this.sonido
     }
 }
 class Oso extends Animal {
@@ -52,7 +52,7 @@ class Oso extends Animal {
       super(nombre, edad, img, comentarios, sonido)  
     }
     Gruñir(){
-
+        return this.sonido
     }
 }
 class Serpiente extends Animal {
@@ -60,7 +60,7 @@ class Serpiente extends Animal {
       super(nombre, edad, img, comentarios, sonido)  
     }
     Sisear(){
-
+        return this.sonido
     }
 }
 class Aguila extends Animal {
@@ -68,15 +68,15 @@ class Aguila extends Animal {
       super(nombre, edad, img, comentarios, sonido)  
     }
     Chillar(){
-        document.getElementById ("player").setAttribute("src", "assets/sounds/chillido.mp3")
+        return this.sonido
     }
 }
 
-function animalito() {
-    let nombre = document.getElementById ("animal").value
-    let edad = document.getElementById ("edad").value
-    let imagen = document.getElementById ("preview").innerHTML
-    let comentarios = document.getElementById ("comentarios").innerHTML
-    let sonido = Chillar()
-    
-}
+// function animalito() {
+//     let nombre = document.getElementById ("animal").value
+//     let edad = document.getElementById ("edad").value
+//     let imagen = document.getElementById ("preview").innerHTML
+//     let comentarios = document.getElementById ("comentarios").innerHTML
+//     let sonido = Chillar()
+// document.getElementById ("player").setAttribute("src", "assets/sounds/chillido.mp3")
+// }
