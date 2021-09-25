@@ -1,4 +1,4 @@
-export default class Animal {
+export class Animal {
     constructor(nombre, edad, img, comentarios, sonido){
         let Nombre = nombre
         this.getNombre = ()=> Nombre
@@ -31,7 +31,7 @@ export default class Animal {
     }
 }
 
-class Leon extends Animal {
+export class Leon extends Animal {
     constructor(nombre, edad, img, comentarios, sonido){
       super(nombre, edad, img, comentarios, sonido)  
     } 
@@ -39,7 +39,7 @@ class Leon extends Animal {
         return this.sonido
     }
 }
-class Lobo extends Animal {
+export class Lobo extends Animal {
     constructor(nombre, edad, img, comentarios, sonido){
       super(nombre, edad, img, comentarios, sonido)  
     }
@@ -47,7 +47,7 @@ class Lobo extends Animal {
         return this.sonido
     }
 }
-class Oso extends Animal {
+export class Oso extends Animal {
     constructor(nombre, edad, img, comentarios, sonido){
       super(nombre, edad, img, comentarios, sonido)  
     }
@@ -55,7 +55,7 @@ class Oso extends Animal {
         return this.sonido
     }
 }
-class Serpiente extends Animal {
+export class Serpiente extends Animal {
     constructor(nombre, edad, img, comentarios, sonido){
       super(nombre, edad, img, comentarios, sonido)  
     }
@@ -63,7 +63,7 @@ class Serpiente extends Animal {
         return this.sonido
     }
 }
-class Aguila extends Animal {
+export class Aguila extends Animal {
     constructor(nombre, edad, img, comentarios, sonido){
       super(nombre, edad, img, comentarios, sonido)  
     }
@@ -71,12 +71,3 @@ class Aguila extends Animal {
         return this.sonido
     }
 }
-
-// function animalito() {
-//     let nombre = document.getElementById ("animal").value
-//     let edad = document.getElementById ("edad").value
-//     let imagen = document.getElementById ("preview").innerHTML
-//     let comentarios = document.getElementById ("comentarios").innerHTML
-//     let sonido = Chillar()
-// document.getElementById ("player").setAttribute("src", "assets/sounds/chillido.mp3")
-// }
